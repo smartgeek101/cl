@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(45deg, violet 0%,
+             blue 46%, #00ffff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            outline: 3px solid rgb(238, 64, 220);
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 40px;
+            color: rgb(238, 64, 220);
+            
+        }
+        .text{
+            font-size: 20px;
+            width: 200px;
+            height: 30px;
+            background: rgb(239, 239, 119);
+            color: black;
+            font-weight: 900;
+            border-radius: 20px;
+            background: rgb(248, 185, 251);
+            border: 2px solid rgb(238, 64, 220);
+            
+
+        }
+        .btn{
+            font-size: 25px;
+            font-family: winer hand itc;
+            background-color: rgb(238, 64, 220);
+            color: yellow;
+            font-weight: 900;
+            border-radius: 30px;
+            border: 8px solid rgb(238, 64, 220);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        Enter New year 
+    </h1>
+    <input type="text" class="text" placeholder="Enter Year">
+    <br>
+    <br>
+
+    <input type="button" class="btn" value="Sumbit" onclick="year()">
+    </div>
+    <script>
+        function year()
+        {
+            document.location.href="vd.mp4";
+        }
+    </script>
+    
+</body>
+</html>

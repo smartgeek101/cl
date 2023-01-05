@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return myform()">
+        UserName : <input type="text" id="user_name" value="">
+        <span id="message"></span>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function myform()
+        {
+            // raguler expresion for valid words
+            var correct_way= /^[A-Za-z]+$/;
+
+            // text fild khali na chhodne ke liye
+            var a=document.getElementById("user_name").value;
+            if(a=='')
+            {
+                document.getElementById("message").innerHTML="please fill user name";
+                return false;
+            }
+            // for mimimum words lngth
+            if(a.length<3)
+            {
+                document.getElementById("message").innerHTML="username must be 3 charcter";
+                return false;
+            }
+            //for character kitne tak hone chahiye unki seema
+            if(a.length>20)
+            {
+                document.getElementById("message").innerHTML="username must be less 20 characters";
+                return false;
+            }
+            //for jonse character hame nehi chahiye
+            if(a.match(correct_way))
+            true;
+            else{
+                document.getElementById("message").innerHTML="only alphabate are allowed";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
